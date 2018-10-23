@@ -1,8 +1,8 @@
-afrom flask_restful import Resource
+from flask_restful import Resource
 from flask import jsonify, make_response, request
 
 # local
-from models import OrdersOperations
+from ..models.orders_models import OrdersOperations
 
 
 class Orders(Resource, OrdersOperations):
